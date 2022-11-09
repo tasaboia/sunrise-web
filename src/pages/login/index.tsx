@@ -24,9 +24,9 @@ export default function Login() {
         <div className={`${styles.logo} animate__animated  animate__fadeIn animate__delay-0.5s`}>
             <img className={styles.icon} src={logo} alt="Logo Sunrise church"/>
         </div>
-        <div className={styles.login__container} >
+        <div  className={styles.login__container} >
             <div className={styles.login}>
-                <h3 className={styles.title}>Login</h3>
+                <h1 className={styles.title}>Login</h1>
                 {/* {status.open ? <Status label={status.label} state={status.state} /> : null} */}
                 <UIInput 
                     placeholder='E-mail' 

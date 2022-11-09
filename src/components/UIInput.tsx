@@ -55,7 +55,7 @@ const Div = styled('div', {
   borderRadius: '5px',
   fontSize: '16px',
   width: "100%",
-  maxHeight: "3rem",
+  maxHeight: "2rem",
   padding: 5,
   display: "flex",
   flexDirection: "row",
