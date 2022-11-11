@@ -51,7 +51,7 @@ const data = [
   return (
     <>
       <Wrapper/>
-      <div style={{display: "flex", flexWrap: "wrap", marginTop: 80, marginLeft: 240}}>
+      <Box style={{display: "flex", flexWrap: "wrap", marginTop: 80}} paddingLeft={{ xs: 2, sm: 36}}>
         <UIPanel title='Agenda'>
           <Agenda/>
         </UIPanel>
@@ -103,7 +103,7 @@ const data = [
         </LineChart>
       </ResponsiveContainer>
         </UIPanel>
-      </div>
+      </Box>
       
      </>
   )

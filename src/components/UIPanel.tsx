@@ -52,5 +52,5 @@ const Parent = styled('div', {
     width: "40%",
     height: "30vh",
     margin: 20,
-    
+    minWidth: 400,
   });
