@@ -7,6 +7,7 @@ import UIInput from '../../components/UIInput'
 import { initialValues, SignupSchema } from './validation'
 import styles from './login.module.css'
 import { useAuth } from '../../context'
+import 'animate.css';
 
 export default function Login() {
    const { login } = useAuth()
@@ -21,7 +22,7 @@ export default function Login() {
   >
     {({ handleChange, handleBlur, handleSubmit, errors, values }) => (
     <div className={styles.screen}>
-        <div className={`${styles.logo} animate__animated  animate__fadeIn animate__delay-0.5s`}>
+        <div className={`${styles.logo} animate__fadeIn`}>
             <img className={styles.icon} src={logo} alt="Logo Sunrise church"/>
         </div>
         <div  className={styles.login__container} >

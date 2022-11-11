@@ -26,7 +26,6 @@ interface Props {
    * You won't need it on your project.
    */
   window?: () => Window;
-  children: React.ReactNode | React.ReactNode []
 }
 export default function Wrapper(props: Props) {
   const { window } = props;
@@ -108,7 +107,6 @@ export default function Wrapper(props: Props) {
         >
           {drawer}
         </Drawer>
-        {props.children}
     </Box>
   )
 }
