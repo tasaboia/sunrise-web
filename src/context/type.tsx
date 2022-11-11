@@ -12,16 +12,14 @@ export interface ISingIn {
   }
 
 export interface ISingInResponse {
-    data: {
-      kind: string,
-      localId: string,
-      email: string,
-      displayName: string,
-      idToken: string,
-      registered: boolean,
-      refreshToken: string,
-      expiresIn: string
-    }
+    kind: string,
+    localId: string,
+    email: string,
+    displayName: string,
+    idToken: string,
+    registered: boolean,
+    refreshToken: string,
+    expiresIn: string
   }
   
 export interface ISingUp {

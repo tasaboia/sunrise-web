@@ -9,14 +9,14 @@ import styles from './login.module.css'
 import { useAuth } from '../../context'
 
 export default function Login() {
-   const { login, status } = useAuth()
+   const { login } = useAuth()
   
   return (
     <Formik
     initialValues={initialValues}
     validationSchema={SignupSchema}
     onSubmit={values => {
-         login({email: values.email, password: values.password, returnSecureToken: true,})
+        login({email: values.email, password: values.password, returnSecureToken: true,})
     }}
   >
     {({ handleChange, handleBlur, handleSubmit, errors, values }) => (
@@ -43,7 +43,7 @@ export default function Login() {
                     icon='password'
                 />
                 {errors.password ? (<div className={styles.error}>{errors.password}</div>) : null} 
-                <UIButton type="submit" onClick={() => handleSubmit()}>Entrar</UIButton>
+                <UIButton type="submit" onClick={() => handleSubmit ()}>Entrar</UIButton>
                 
             </div>
             <div className={styles.row}>

@@ -1,9 +1,11 @@
 import React from 'react'
-import { useAuth } from '../../context'
+import { Route, Routes } from 'react-router-dom'
+import Dashboard from '../../pages/dashboard'
 
 export default function Private() {
-  const { logout }= useAuth()
   return (
-    <button  onClick={()=> logout()}>Sair</button>
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+    </Routes>
   )
 }

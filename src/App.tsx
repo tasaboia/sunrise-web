@@ -1,7 +1,7 @@
 import React from 'react';
-import { AuthProvider } from './context'
 import Routes from './routes'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { AuthProvider } from './context';
 
 const queryClient = new QueryClient()
 
